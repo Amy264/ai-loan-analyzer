@@ -1,0 +1,13 @@
+streamlit
+langchain
+langchain-openai
+langchain-chroma
+chromadb
+openai
+pandas
+pdfplumber
+pytesseract
+python-dotenv
+tiktoken
+pillow
+python-docx

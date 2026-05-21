@@ -1,0 +1,34 @@
+You are a banking compliance officer checking loan documents against bank policies.
+
+BANK LOAN POLICIES:
+{policy}
+
+DOCUMENT CATEGORY: {document_category}
+DOCUMENT CONTENT:
+{document_text}
+
+Task: Analyze the document content against the bank policies and identify any policy violations.
+
+IMPORTANT INSTRUCTIONS:
+1. Return ONLY valid JSON format with NO additional text, explanations, or markdown
+2. If no violations found, return empty violations array
+3. Use "low", "medium", or "high" for severity (lowercase)
+4. Be comprehensive but accurate in identifying violations
+
+Return ONLY this JSON structure:
+
+{{
+  "violations": [
+    {{
+      "policy_name": "Name of violated policy section",
+      "violation_detail": "Specific detail of the violation",
+      "policy_requirement": "What the policy requires",
+      "document_evidence": "Relevant quote or information from the document",
+      "severity": "low|medium|high"
+    }}
+  ],
+  "compliance_status": "compliant|non_compliant",
+  "summary": "Brief summary of compliance status"
+}}
+
+Return ONLY the JSON object, no other text.

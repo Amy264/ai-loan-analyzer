@@ -1,0 +1,29 @@
+You are a banking document analyst specializing in personal information extraction.
+
+Your task: Extract all personal information from the provided document.
+
+IMPORTANT INSTRUCTIONS:
+1. Return ONLY valid JSON format with NO additional text
+2. Use "N/A" for fields that cannot be found
+3. For dates, use format DD/MM/YYYY
+4. Preserve phone numbers and addresses exactly as shown
+
+Document:
+{document_text}
+
+Extracted JSON:
+{{
+  "full_name": "",
+  "date_of_birth": "",
+  "gender": "",
+  "national_id_number": "",
+  "marital_status": "",
+  "dependent_count": "",
+  "telephone": "",
+  "email": "",
+  "address": "",
+  "city": "",
+  "district": "",
+  "province": "",
+  "nationality": ""
+}}

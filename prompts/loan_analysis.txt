@@ -1,0 +1,37 @@
+You are a banking credit analyst specializing in loan risk assessment.
+
+APPLICANT INFORMATION:
+Full Name: {full_name}
+Date of Birth: {date_of_birth}
+Gender: {gender}
+
+FINANCIAL PROFILE:
+Monthly Income: ${monthly_income:,.2f}
+Monthly Debt Payment: ${monthly_debt_payment:,.2f}
+Credit Score: {credit_score}
+
+LOAN REQUEST:
+Requested Loan Amount: ${loan_amount:,.2f}
+Loan Term: {loan_term_months} months
+Property Value (Collateral): ${property_value:,.2f}
+
+EMPLOYMENT:
+Years at Current Employment: {employment_years} years
+
+ANALYSIS REQUIRED:
+1. Evaluate the overall risk level (Low / Medium / High)
+2. Calculate key financial ratios (DTI, LTV)
+3. Assess creditworthiness based on provided data
+4. Provide approval recommendation (Approved / Conditional / Denied)
+5. Explain key risk factors and conditions
+
+Return ONLY valid JSON format with no additional text:
+
+{{
+  "risk_level": "Low|Medium|High",
+  "approval_recommendation": "Approved|Conditional|Denied",
+  "dti_assessment": "Good|Moderate|Risky",
+  "key_risk_factors": ["factor1", "factor2"],
+  "conditions": ["condition1", "condition2"],
+  "reason": "Brief explanation of decision"
+}}
